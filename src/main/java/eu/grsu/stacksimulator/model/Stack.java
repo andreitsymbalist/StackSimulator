@@ -1,6 +1,13 @@
 package eu.grsu.stacksimulator.model;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.ConcurrentModificationException;
+import java.util.EmptyStackException;
+import java.util.Iterator;
+import java.util.NoSuchElementException;
+import java.util.Objects;
+import java.util.Spliterator;
+import java.util.Spliterators;
 import java.util.function.Consumer;
 
 public class Stack<E> implements Iterable<E> {
