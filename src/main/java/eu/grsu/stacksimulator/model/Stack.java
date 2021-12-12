@@ -77,6 +77,7 @@ public class Stack<E> implements Iterable<E> {
         elementData[--elementCount] = null;
     }
 
+    @SuppressWarnings("unchecked")
     public E elementAt(int index) {
         if (index >= elementCount) {
             throw new ArrayIndexOutOfBoundsException(index + " >= " + elementCount);
